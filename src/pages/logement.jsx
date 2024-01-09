@@ -31,8 +31,8 @@ function Logement () {
                         <div className='title'>{data.title}</div>
                         <div className='lieu'>{data.location}</div>
                         <div className='tagsContainer'>
-                            {data.tags.map((item)=>
-                                <Tags tagText={item} />
+                            {data.tags.map((item, index)=>
+                                <Tags key={index} tagText={item} />
                             )}
                         </div>
                     </div>
